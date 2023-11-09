@@ -1,22 +1,28 @@
+% Preamble
+% Document Configuration
 \documentclass[a4paper, twoside, 11pt]{report}
-
-\usepackage[utf8]{inputenc} 
-\usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
 \usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-\usepackage{changepage}
-\usepackage{emptypage}
-\usepackage{setspace}
-\usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{csquotes}
-\usepackage{lipsum}
-\usepackage{float}
-
-\addbibresource{bibliography/bibliography.bib}
 \renewcommand{\baselinestretch}{1}
 \setlength{\parskip}{1em}
+
+% Reference Management
+\usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
+\addbibresource{bibliography/bibliography.bib}
+
+% Typography Improvements
+\usepackage{setspace}
+\usepackage{changepage}
+\usepackage{emptypage}
+\usepackage{csquotes}
+
+% Graphics Support
+\usepackage{graphicx}
 \graphicspath{{images/}}
+
+% Document Navigation
+\usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=black,
@@ -25,6 +31,11 @@
     citecolor=black
 }
 
+% Other packages
+\usepackage{lipsum}
+\usepackage{float}
+
+% Document content begins here
 \begin{document}
 
 \pagenumbering{gobble}
